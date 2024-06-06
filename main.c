@@ -132,6 +132,8 @@ int main(void) // void inserido conforme correção do xcode
         printf("\t1 - Cadastrar Usuários \n\n");
         printf("\t2 - Consultar Registros \n\n");
         printf("\t3 - Deletar Registros \n\n");
+        printf("\t4 - Sair do sistema \n\n");
+
         printf("\t Digite a opção:  ");
         
         scanf("%d", &opcao);//armaneza a opção escolhida
@@ -150,6 +152,11 @@ int main(void) // void inserido conforme correção do xcode
                 
         case 3:
         deleta();
+        break;
+        
+        case 4:
+        printf("Obrigado por usar nosso sistema \n");
+        return 0;
         break;
     
         default:
